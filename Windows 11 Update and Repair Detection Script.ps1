@@ -28,7 +28,7 @@ $Date = Get-Date
 
 $diff = New-TimeSpan -Start $lastupdate -end $Date
 $days = $diff.Days
-if  ($days -ge 40)
+if  ($days -ge 10)
     {
      Write-Output "Troubleshooting Updates - Last update was $days days ago"
      exit 1
