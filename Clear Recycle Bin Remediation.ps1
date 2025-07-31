@@ -1,7 +1,13 @@
 <#
-Version: 1.0
-Run as: User 
+Version: 1.1
+Run as: User
 Context: 64 Bit
-#> 
+Description: Clears the Recycle Bin for all drives without prompting the user.
+#>
 
-Clear-RecycleBin -Force
+try {
+    Clear-RecycleBin -Force -ErrorAction Stop
+    Write-Output "Recycle Bin cleared successfully."
+} catch {
+    Write-Output "Failed to clear Recycle Bin: $_"
+}
