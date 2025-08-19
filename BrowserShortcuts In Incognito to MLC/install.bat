@@ -1,0 +1,1 @@
+PowerShell -ExecutionPolicy Bypass -File Create-DesktopShortcut.ps1

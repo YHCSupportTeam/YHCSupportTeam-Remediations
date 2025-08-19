@@ -1,0 +1,1 @@
+PowerShell -ExecutionPolicy Bypass -File Delete-DesktopShortcut.ps1
